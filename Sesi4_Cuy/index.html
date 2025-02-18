@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceklekan Lampu</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.0.0/dist/flowbite.min.css" rel="stylesheet" />
+    
+</head>
+
+<body>
+    <div class="flex flex-row justify-center items-center min-h-screen bg-gray-900 gap-10">
+
+
+        <!-- Lampu 1 -->
+        <div class="flex flex-col gap-4 items-center">
+            <img src="assets/images/off.gif" alt="" id="lampu1" />
+
+            <label class="inline-flex items-center cursor-pointer">
+                <input type="checkbox" id="default-toggle1" class="sr-only peer" onchange="saklar()">
+                <div
+                    class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-blue-600">
+                </div>
+               
+
+            <!-- <button onclick="saklar('on', 1)" class="bg-green-500 p-4 text-white">Nyalakan Lampu</button>
+            <button onclick="saklar('off', 1)" class="bg-red-500 p-4 text-white">Matikan Lampu</button> -->
+        </div>
+
+        <!-- Lampu 2 -->
+        <div class="flex flex-col gap-4 items-center">
+            <img src="assets/images/off.gif" alt="" id="lampu2" />
+
+            <label class="inline-flex items-center cursor-pointer">
+                <input type="checkbox" id="default-toggle2" class="sr-only peer" onchange="saklar()">
+                <div
+                    class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-blue-600">
+                </div>
+
+            </label>
+            <!-- <button onclick="saklar('on', 2)" class="bg-green-500 p-4 text-white">Nyalakan Lampu</button>
+            <button onclick="saklar('off', 2)" class="bg-red-500 p-4 text-white">Matikan Lampu</button> -->
+        </div>
+
+        <!-- Lampu 3 -->
+        <div class="flex flex-col gap-4 items-center">
+            <img src="assets/images/off.gif" alt="" id="lampu3" />
+
+            <label class="inline-flex items-center cursor-pointer">
+                <input type="checkbox" id="default-toggle3" class="sr-only peer" onchange="saklar()">
+                <div
+                    class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-blue-600">
+                </div>
+              
+            </label>
+            <!-- <button onclick="saklar('on', 3)" class="bg-green-500 p-4 text-white">Nyalakan Lampu</button>
+            <button onclick="saklar('off', 3)" class="bg-red-500 p-4 text-white">Matikan Lampu</button> -->
+        </div>
+    </div>
+
+
+    <!-- Ini adalah script js -->
+    <script src="saklar.js" type="application/javascript"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.0.0/dist/flowbite.min.js"></script>
+</body>
+
+</html>
