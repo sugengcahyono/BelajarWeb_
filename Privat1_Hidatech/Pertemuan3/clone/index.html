@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazismu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <style type="text/css">
+        #margin-top {
+            margin-top: 100px;
+            
+        }
+        .carousel-control-prev {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #ed7a07;
+            top: 40%;
+            left: -2%;
+        }
+
+        .carousel-control-next {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #ed7a07;
+            top: 40%;
+            right: -2%;
+        }
+
+        #col-md4-bg {
+            background-color: #9d836a;
+            border-radius: 5px 0px 0px 5px;
+            color: white;
+            
+        }
+        #col-md4-bg2 {
+            background-color: #9d836a;
+            color: white;
+
+        }
+        #col-md4-bg3 {
+            background-color: #9d836a;
+            border-radius: 0px 5px 5px 0px;
+            color: white;
+
+        }
+        #kotaktab {
+            border: 1px solid gray;
+            border-radius: 8px;
+
+        }
+        .nav-pills .nav-link.active{
+          background-color: #ed7a07;
+        }
+        .button {
+            background-color: #ed7a07;
+            color: white;
+        }
+        #borderberita{
+          border: 1px solid #c5c4c3;
+          height: 300px;
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top shadow">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="../lazismu/img/logo.svg" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mx-5 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Tentang Kami
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Latar Belakang</a></li>
+                        <li><a class="dropdown-item" href="#">Visi, Misi, Prinsip dan Tujuan</a></li>
+                        <li><a class="dropdown-item" href="#">Struktur Manajemen</a></li>
+                        <li><a class="dropdown-item" href="#">Rencana Strategis</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Info
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Berita</a></li>
+                        <li><a class="dropdown-item" href="#">Artikel</a></li>
+                        <li><a class="dropdown-item" href="#">Konsultasi</a></li>
+                        <li><a class="dropdown-item" href="#">Video</a></li>
+                    </ul>
+                  </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" aria-current="page" href="#">Program</a>
+              </li>
+            </ul>
+            <div class="ms-1">
+                <a href="" class="btn btn-warning me-2 " type="button" style="color: white;">Kalkulator Zakat</a>
+                <a href="" class="btn btn-warning me-5 " type="button" style="color: white;">Zakat Sekarang</a>
+                <a href="" class="btn btn-warning btn-circle me-2" style="border-radius: 100%;">
+                    <i class="fas fa-search" style="color: white;"></i>
+                </a>
+                <a href="" class=" link-dark border-end pe-3 ps-2">Masuk</a>
+                <a href="" class="link-dark link-underline-opacity-0 ps-2">Daftar</a>
+
+        </div>
+      </nav>
+
+      <!--  -->
+      <div class="container-fluid" id="margin-top">
+        <div class="container text-center">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner rounded-3">
+                  <div class="carousel-item active">
+                    <img src="../lazismu/img/1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../lazismu/img/2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../lazismu/img/3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+              <div>
+                <div class="row mx-5">
+                    <div class="col md-4 pt-3 pb-3 border-end" id="col-md4-bg">
+                        <span >Program Donasi</span><br>
+                        <span style="font-size: 30px; font-weight: bold;">18</span>
+                    </div>
+                    <div class="col md-4  pt-3 pb-3 border-end" id="col-md4-bg2">
+                        <span>Total Dana Terkumpul</span><br>
+                        <span style="font-size: 30px; font-weight: bold; ">Rp 55.848.237.863</span>
+                    </div>
+                    <div class="col md-4  pt-3 pb-3 border-end" id="col-md4-bg3">
+                        <span >Donatur Terdaftar</span><br>
+                        <span style="font-size: 30px; font-weight: bold;">71149</span>
+                    </div>
+                    
+                </div>
+              </div>
+        </div>
+      </div>
+
+      <div class="container-fluid pt-5 pb-5">
+        <div class="container text-center">
+            <img src="../lazismu/img/favicon.png" alt="">
+            <h4>Salurkan Donasimu Disini!</h4>
+            <p>Silahkan pilih program donasi yang Anda inginkan</p>
+        </div>
+
+        <div class="container">
+            <ul class="nav nav-pills nav-fill">
+                <li class="nav-item" id="kotaktab">
+                  <a class="nav-link active" aria-current="page" href="#fill-tabpanel-0">Terkini</a>
+                </li>
+                <li class="nav-item" id="kotaktab">
+                  <a class="nav-link" href="#">Zakat</a>
+                </li>
+                <li class="nav-item" id="kotaktab">
+                    <a class="nav-link" href="#">Infaq</a>
+                </li>
+                <li class="nav-item" id="kotaktab">
+                    <a class="nav-link" href="#">Waqaf</a>
+                </li>
+                <li class="nav-item" id="kotaktab">
+                    <a class="nav-link" href="#">Program Pilar</a>
+                </li>
+              </ul>
+              
+              <div class="tab-content mt-3">
+                <div class="tab-pane active" id="fill-tabpanel-0" role="tabpanel" aria-labelledby="fill-tab-0">
+                    <div class="row">
+                        <div class="col-sm">
+                            <img src="../lazismu/berita/1.jpg" class="img-thumbnail" alt="">
+                            <div class="container">
+                            Terkini
+                            Ribuan Korban Banjir Sukabumi Membutuhkan Bantuanmu
+                            <hr>
+                            </div>
+                        </div>
+
+                        <div class="col-sm">
+                            <img src="../lazismu/berita/2.jpg" class="img-thumbnail" alt="">
+                            <div class="container">
+                            Terkini
+                            Ribuan Korban Banjir Sukabumi Membutuhkan Bantuanmu
+                                <hr>
+                            </div>
+                        </div>
+
+                        <div class="col-sm">
+                            <img src="../lazismu/berita/3.jpg" class="img-thumbnail" alt="">
+                            <div class="container">
+                                Terkini
+                                Ribuan Korban Banjir Sukabumi Membutuhkan Bantuanmu
+                                <hr>
+                            </div>
+                        </div>
+                    
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid pt-5 pb-5" style="background-color: #fef1e4;">
+        <div class="container text-center">
+            <h3>Masih Bingung Untuk Berzakat?</h3>
+            <h6>Untuk membantu Anda, maka terlebih dahulu klik button dibawah ini</h6>
+            <a href="#" class="btn button" role="button">Konsultasi</a>
+            <a href="#" class="btn button" role="button">Kalkulator Zakat</a>
+            <a href="#" class="btn button" role="button">Konfirmasi Zakar</a>
+        </div>
+    </div>
+
+    <div class="container-fluid pt-5 pb-5">
+        <div class="container text-center">
+            <img src="../lazismu/img/favicon.png" alt="">
+            <h4>Info Terkini LazisMu</h4>
+            <p>Berita terbaru dari Lazismu</p>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="container" id="borderberita">
+                        <img src="../lazismu/berita/q.jpg" class="img-thumbnail" alt="">
+                        <strong>Asesmen Lazismu Jangkau Kawasan 3T, Save Our School Lengkapi Program Pembangunan Berkelanjutan di Kabupaten Alor</strong>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="container" id="borderberita">
+                        <img src="../lazismu/berita/w.jpg" class="img-thumbnail" alt="">
+                        <strong>Asesmen Lazismu Jangkau Kawasan 3T, Save Our School Lengkapi Program Pembangunan Berkelanjutan di Kabupaten Alor</strong>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="container" id="borderberita">
+                        <img src="../lazismu/berita/e.jpg" class="img-thumbnail" alt="">
+                        <strong>Asesmen Lazismu Jangkau Kawasan 3T, Save Our School Lengkapi Program Pembangunan Berkelanjutan di Kabupaten Alor</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container pt-5 pb-5">
+            <div class="contaner">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <h6>Video</h6>
+                        <iframe width="650" height="315" src="https://www.youtube.com/embed/sEwK9SHdcyk?si=slEKmJ9dFaHrNmxb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-sm-4">
+                        <h6>Artikel</h6>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <img src="../lazismu/berita/1.jpg" class="img-thumbnail" alt="">
+                            </div>
+                            <div class="col-sm-9">
+                                Jiwa Bersih Orang yang Bersedekah
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <img src="../lazismu/berita/1.jpg" class="img-thumbnail" alt="">
+                            </div>
+                            <div class="col-sm-9">
+                                Jiwa Bersih Orang yang Bersedekah
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <img src="../lazismu/berita/1.jpg" class="img-thumbnail" alt="">
+                            </div>
+                            <div class="col-sm-9">
+                                Jiwa Bersih Orang yang Bersedekah
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <img src="../lazismu/berita/1.jpg" class="img-thumbnail" alt="">
+                            </div>
+                            <div class="col-sm-9">
+                                Jiwa Bersih Orang yang Bersedekah
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <img src="../lazismu/berita/1.jpg" class="img-thumbnail" alt="">
+                            </div>
+                            <div class="col-sm-9">
+                                Jiwa Bersih Orang yang Bersedekah
+                            </div>
+                        </div>
+                        <br>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid pt-5 pb-5">
+            <div class="container text-center">
+                <h3>6 Pilar Program Lazismu</h3>
+                <h6>Mari kita dukung program-program yang dilaksanakan oleh Lazismu</h6>
+            </div>
+
+            <div class="container pt-5 pb-2">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="container pt-3 text-center">
+                            <img src="../lazismu/img/icon-education.svg" class="img-thumbnail" alt="">
+                            <br>
+                            Pendidikan
+                        </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="container pt-3 text-center">
+                            <img src="../lazismu/img/icon-health.svg" class="img-thumbnail" alt="">
+                            <br>
+                            Kesehatan
+                        </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="container pt-3 text-center">
+                            <img src="../lazismu/img/icon-economy.svg" class="img-thumbnail" alt="">
+                            <br>
+                            Ekonomi
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container pt-5 pb-5">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="container pt-3 text-center">
+                            <img src="../lazismu/img/icon-charity.svg" class="img-thumbnail" alt="">
+                            <br>
+                            Lingkungan
+                        </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="container pt-3 text-center">
+                            <img src="../lazismu/img/icon-dakwah.svg" class="img-thumbnail" alt="">
+                            <br>
+                            Dakwah
+                        </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="container pt-3 text-center">
+                            <img src="../lazismu/img/fg.svg" class="img-thumbnail" alt="">
+                            <br>
+                            Kemanusiaan
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pt-5 pb-5" style="background-color: #fef1e4;">
+        <div class="container text-center">
+            slide
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid pt-3 pb-5 border-top">
+            <div class="container ">
+                <div class="row pt-5">
+                    <div class="col-4">
+                        <h6>Alamat</h6>
+                        <p>LAZISMU adalah lembaga zakat nasional dengan SK Menag No. 90 Tahun 2022, yang berkhidmat dalam pemberdayaan masyarakat melalui pendayagunaan dana zakat, infaq, wakaf dan dana kedermawanan lainnya baik dari perseorangan, lembaga, perusahaan dan instansi lainnya. Lazismu tidak menerima segala bentuk dana yang bersumber dari kejahatan. UU RI No. 8 Tahun 2010 Tentang Pencegahan dan Pemberantasan Tindak Pidana Pencucian Uang</p>
+                    </div>
+                    <div class="col-3">
+                        <h6>Alamat</h6>
+                        <p style="float: left;" > <i class='fas fa-map-marker-alt'></i>Jl. Menteng Raya No.62, RT.3/RW.9, Kb. Sirih, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10340</p>
+                    </div>
+                    <div class="col-3">
+                        <h6>Selengkapnya</h6>
+                        <ul>
+                            <li>Kebijakan Privasi</li>
+                            <li>Syarat dan Ketentuan</li>
+                            <li>Syarat dan Ketentuan</li>
+                            <li>Syarat dan Ketentuan</li>
+                        </ul>
+                    </div>
+                    <div class="col-2">
+                        <h6>Sosial Media</h6>
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CobainDulu</title>
+    <style type="text/css">
+        *{
+            padding: 0px;
+            margin: 0px auto;
+        }
+
+        /* Navbar */
+        .container-navbar{
+            height: 50px;
+            border: 1px black solid;
+            padding-left: 30px;
+        }
+
+        .logo-navbar{
+            font-size: 40px;
+            font-weight: 700;
+            color: black;
+            font-style: italic;
+           
+        }
+
+        .logo-navbar span{
+            color: red;
+        }
+
+        .navbar-menu{
+            padding: 15px;
+            float: right;
+        }
+
+        .menu{
+            padding: 10px;
+            font-style: normal;
+            font-size: 18px;
+            color: black;
+
+        }
+
+        #btn-login{
+            font-size: 18px;
+            color: black;
+            font-style: normal;
+            background-color: green;
+            
+        }
+
+        /* Content */
+        .content{
+            height: 450px;
+            border: 1px black solid;
+            clear: both;
+            
+        }
+
+        .content-isi{
+            height: 380px;
+            width: 40%;
+            background-color: aqua;
+            border: 1px black solid;
+            float: left;
+            padding-top: 1px;
+            padding-bottom: 1px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+
+        /* Layanan */
+        .container-layanan{
+            height: 150px;
+            padding-top: 10px;
+
+        }
+
+        .isi-layanan{
+            height: 130px;
+            width: 130px;
+            border: 1px black solid;
+            float: left;
+        }
+
+        /* Artikel Berita */
+        .container-berita{
+            padding-top: 10px;
+            height: 300px;
+            border: 1px black solid;
+        }
+
+        .container-isiartikelberita{
+            padding-top: 10px;
+            width: 100%;
+            height: 200px;
+            border: 1px black solid;
+            background-color: aqua;
+            clear: both;
+        }
+
+        .isi-artikelberita{
+            width: 300px;
+            height: 150px;
+            border: 1px black solid;
+            float: left;
+            background-color: blue;
+        }
+
+        #btn-beritalain{
+            font-size: 18px;
+            color: white;
+            font-style: normal;
+            background-color: green;
+            float: right;
+
+        }
+
+        /* Agenda */
+        .container-agenda{
+            padding-top: 10px;
+            height: 300px;
+            border: 1px black solid;
+        }
+
+        
+        .container-isiagenda{
+            padding-top: 10px;
+            width: 100%;
+            height: 200px;
+            border: 1px black solid;
+            background-color: aqua;
+            clear: both;
+        }
+
+        
+        .isi-agenda{
+            width: 300px;
+            height: 150px;
+            border: 1px black solid;
+            float: left;
+            background-color: blue;
+        }
+
+        #btn-agendalain{
+            font-size: 18px;
+            color: white;
+            font-style: normal;
+            background-color: orange;
+            float: right;
+
+        }
+
+         /* Dosen */
+         .container-dosen{
+            padding-top: 10px;
+            height: 300px;
+            border: 1px black solid;
+        }
+
+        
+        .container-isidosen{
+            padding-top: 10px;
+            width: 100%;
+            height: 200px;
+            border: 1px black solid;
+            background-color: aqua;
+            clear: both;
+        }
+
+        
+        .isi-dosen{
+            width: 150px;
+            height: 200px;
+            border: 1px black solid;
+            float: left;
+            background-color: blue;
+        }
+
+        #btn-dosenlain{
+            font-size: 18px;
+            color: white;
+            font-style: normal;
+            background-color: green;
+            float: right;
+
+        }
+
+        /* Prrodi */
+        .container-prodi{
+            padding-top: 10px;
+            height: 500px;
+            border: 1px black solid;
+        }
+
+        
+        .container-isiprodi{
+            padding-top: 10px;
+            width: 100%;
+            height: 400px;
+            border: 1px black solid;
+            background-color: aqua;
+            clear: both;
+        }
+
+        .div-prodi{
+            clear: both;
+            padding: 10px;
+        }
+
+        
+        .isi-prodi{
+            width: 300px;
+            height: 150px;
+            border: 1px black solid;
+            float: left;
+            background-color: blue;
+        }
+
+        .isi-prodi1{
+            width: 300px;
+            height: 150px;
+            border: 1px black solid;
+            float: left;
+            background-color: blue;
+        }
+
+        #btn-prodilain{
+            font-size: 18px;
+            color: white;
+            font-style: normal;
+            background-color: green;
+            float: right;
+
+        }
+
+        
+
+        /* UKM */
+        .container-ukm{
+            padding-top: 10px;
+            height: 300px;
+            border: 1px black solid;
+        }
+
+        
+        .container-isiukm{
+            padding-top: 10px;
+            width: 100%;
+            height: 200px;
+            border: 1px black solid;
+            background-color: aqua;
+            clear: both;
+        }
+
+        
+        .isi-ukm{
+            width: 300px;
+            height: 150px;
+            border: 1px black solid;
+            float: left;
+            background-color: blue;
+        }
+
+        #btn-ukmlain{
+            font-size: 18px;
+            color: white;
+            font-style: normal;
+            background-color: green;
+            float: right;
+
+        }
+
+        /* Galeri */
+        .container-galeri{
+            padding-top: 10px;
+            height: 300px;
+            border: 1px black solid;
+        }
+
+        
+        .container-isigaleri{
+            padding-top: 10px;
+            width: 100%;
+            height: 200px;
+            border: 1px black solid;
+            background-color: aqua;
+            clear: both;
+        }
+
+        
+        .isi-galeri{
+            width: 300px;
+            height: 150px;
+            border: 1px black solid;
+            float: left;
+            background-color: blue;
+        }
+
+        #btn-galerilain{
+            font-size: 18px;
+            color: white;
+            font-style: normal;
+            background-color: green;
+            float: right;
+
+        }
+
+        /* Galeri Video */
+        .container-galerivid{
+            padding-top: 10px;
+            height: 450px;
+            border: 1px black solid;
+        }
+
+        
+        .container-isigalerivid{
+            padding-top: 10px;
+            width: 100%;
+            height: 350px;
+            border: 1px black solid;
+            background-color: aqua;
+            clear: both;
+        }
+
+        .div-galeri{
+            clear: both;
+            padding: 10px;
+        }
+
+        
+        .isi-galerivid{
+            width: 300px;
+            height: 150px;
+            border: 1px black solid;
+            float: left;
+            background-color: blue;
+        }
+
+        #btn-galerilainvid{
+            font-size: 18px;
+            color: white;
+            font-style: normal;
+            background-color: green;
+            float: right;
+
+        }
+
+        
+
+        /* Cerita Alumni */
+        .container-ceritalumni{
+            padding-top: 20px;
+            height: 400px;
+            border: 1px black solid;
+
+        }
+        
+        .teks-headcerita{
+            text-align: center;
+        }
+
+        .main-tekscerita{
+            font-style: normal;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .second-tekscerita{
+            font-style: normal;
+            font-size: 18px;
+            font-weight: 100;
+        }
+
+        .container-isicerita{
+            padding-top: 20px;  
+            width: 80%;
+            height: 80%;
+            border: 1px black solid;
+
+        }
+
+        .isi-cerita{
+        
+            width: 400px;
+            height: 300px;
+            border: 1px black solid;
+            float: left;
+        }
+
+        /* Link  */
+        .container-link{
+            padding-top: 20px;
+            height: 200px;
+            border: 1px black solid;
+
+        }
+        
+        .teks-link{
+            text-align: center;
+        }
+
+        .main-link{
+            font-style: normal;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        
+
+        .container-isilink{
+            padding-top: 20px;  
+            width: 90%;
+            height: 70%;
+            border: 1px black solid;
+
+        }
+
+        .isi-link{
+        
+            width: 150px;
+            height: 100px;
+            border: 1px black solid;
+            float: left;
+        }
+
+        .pamflet{
+            width: 800px;
+            height: 250px;
+            border: 1px black solid;
+
+        }
+
+        /* Lainnya */
+
+        .container{
+            
+            padding-top: 30px;
+            padding-left: 5%;
+            padding-right: 5%;
+ 
+        }
+
+        .button-container{
+            
+            border: 1px black solid;
+            float: right;
+        }
+
+        .teks-head{
+            width: 50%;
+            border: 1px black solid;
+            float: left;
+        }
+
+        .main-teks{
+            font-style: normal;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .second-teks{
+            font-style: normal;
+            font-size: 18px;
+            font-weight: 100;
+
+        }
+
+        
+
+        
+
+        
+    </style>
+</head>
+<body>
+    
+        <!-- Navbar -->
+         <nav class="container-navbar">
+            <a href="#" class="logo-navbar">Cobain<span>Dulu.</span></a>
+            <div class="navbar-menu">
+                <a href="#" class="menu">Beranda</a>
+                <a href="#" class="menu">Profile</a>
+                <a href="#" class="menu">Artikel</a>
+                <a href="#" class="menu">Informasi</a>
+                <a href="#" class="menu">Kontak</a>
+                <button id="btn-login">Login</button>
+            </div>
+         </nav>
+
+         <!-- Content Utama -->
+          <div class="content">
+            <div class="content-isi"></div>
+            <div class="content-isi"></div>
+            
+          </div>
+
+          <!-- Container -->
+          <div class="container">
+            <!-- Layanan -->
+            <p class="main-teks">Layanan dan Unggulan</p>
+           <div class="container-layanan">
+            <div class="isi-layanan"></div>
+            <div class="isi-layanan"></div>
+            <div class="isi-layanan"></div>
+            <div class="isi-layanan"></div>
+            <div class="isi-layanan"></div>
+            <div class="isi-layanan"></div>
+           </div>
+
+           <!-- Artikel Berita -->
+            <div class="container-berita">
+                
+                    <div class="teks-head">
+                        <p class="main-teks">Artikel dan Berita</p>
+                        <p class="second-teks">Aktivitas terbaru</p>
+                    </div>
+                    <div class="button-container">
+                        <button id="btn-beritalain">Lainnya</button>
+                    </div>
+
+                
+                <div class="container-isiartikelberita">
+                    <card class="isi-artikelberita"></card>
+                    <card class="isi-artikelberita"></card>
+                    <card class="isi-artikelberita"></card>
+                </div>
+
+
+            </div>
+
+            <!-- Agenda -->
+            <div class="container-agenda">
+                
+                <div class="teks-head">
+                    <p class="main-teks">Agenda</p>
+                    <p class="second-teks">Agenda</p>
+                </div>
+                <div class="button-container">
+                    <button id="btn-agendalain">Lainnya</button>
+                </div>
+
+            
+                <div class="container-isiagenda">
+                    <card class="isi-agenda"></card>
+                    <card class="isi-agenda"></card>
+                    <card class="isi-agenda"></card>
+                </div>
+            </div>
+
+            <!-- Daftar Dosen  -->
+            <div class="container-dosen">
+                
+                <div class="teks-head">
+                    <p class="main-teks">Daftar Dosen</p>
+                    <p class="second-teks">Dosen</p>
+                </div>
+                <div class="button-container">
+                    <button id="btn-dosenlain">Lainnya</button>
+                </div>
+
+            
+                <div class="container-isidosen">
+                    <card class="isi-dosen"></card>
+                    <card class="isi-dosen"></card>
+                    <card class="isi-dosen"></card>
+                    <card class="isi-dosen"></card>
+                    <card class="isi-dosen"></card>
+                    <card class="isi-dosen"></card>
+                    
+                </div>
+            </div>
+
+            <!-- Program Studi  -->
+            <div class="container-prodi">
+                
+                <div class="teks-head">
+                    <p class="main-teks">Program Studi</p>
+                    <p class="second-teks">Prodi</p>
+                </div>
+                <div class="button-container">
+                    <button id="btn-ukmlain">Lainnya</button>
+                </div>
+
+            
+                <div class="container-isiprodi">
+                    <div class="div-prodi">
+                        <card class="isi-prodi"></card>
+                        <card class="isi-prodi"></card>
+                    </div>
+                    <div class="div-prodi">
+                        <card class="isi-prodi1"></card>
+                        <card class="isi-prodi1"></card>
+                    </div>  
+                    
+
+                </div>
+                
+            </div>
+
+            <!-- Unit Kegiatan  -->
+            <div class="container-ukm">
+                
+                <div class="teks-head">
+                    <p class="main-teks">Unit Kegiatan Mahasiwa</p>
+                    <p class="second-teks">UKM</p>
+                </div>
+                <div class="button-container">
+                    <button id="btn-ukmlain">Lainnya</button>
+                </div>
+
+            
+                <div class="container-isiukm">
+                    <card class="isi-ukm"></card>
+                    <card class="isi-ukm"></card>
+                    <card class="isi-ukm"></card>
+                    
+                    
+                </div>
+            </div>
+
+            <!-- Galeri KEgiatan  -->
+            <div class="container-galeri">
+                
+                <div class="teks-head">
+                    <p class="main-teks">Galeri Kegiatan</p>
+                    <p class="second-teks">Kegiatan </p>
+                </div>
+                <div class="button-container">
+                    <button id="btn-galerilain">Lainnya</button>
+                </div>
+
+            
+                <div class="container-isigaleri">
+                    <card class="isi-galeri"></card>
+                    <card class="isi-galeri"></card>
+                    <card class="isi-galeri"></card>
+                    
+                    
+                </div>
+            </div>
+
+            <!-- Galeri Video  -->
+            <div class="container-galerivid">
+                
+                <div class="teks-head">
+                    <p class="main-teks">Galeri Video</p>
+                    <p class="second-teks">Video </p>
+                </div>
+                <div class="button-container">
+                    <button id="btn-galerividlain">Lainnya</button>
+                </div>
+
+            
+                <div class="container-isigalerivid">
+                    <div class="div-galeri">
+                        <card class="isi-galerivid"></card>
+                        <card class="isi-galerivid"></card>
+                        <card class="isi-galerivid"></card>
+                    </div>
+                    <div class="div-galeri">
+                        <card class="isi-galerivid"></card>
+                        <card class="isi-galerivid"></card>
+                        <card class="isi-galerivid"></card>
+                    </div>
+    
+                </div>
+            </div>
+
+            <!-- Cerita Alumni -->
+             <div class="container-ceritalumni">
+                <div class="teks-headcerita">
+                    <p class="main-tekscerita">Cerita Alumni</p>
+                    <p class="second-tekscerita">Pengalaman Alumni</p>
+                </div>
+                <div class="container-isicerita">
+                    <card class="isi-cerita"></card>
+                    <card class="isi-cerita"></card>
+                    
+                </div>
+             </div>
+
+             <!-- Link Terkait -->
+             <div class="container-link">
+                <div class="teks-link">
+                    <p class="main-link">Link Terkait</p>
+                    
+                </div>
+                <div class="container-isilink">
+                    <card class="isi-link"></card>
+                    <card class="isi-link"></card>
+                    <card class="isi-link"></card>
+                    <card class="isi-link"></card>
+                    <card class="isi-link"></card>
+                    <card class="isi-link"></card>
+                    
+                </div>
+             </div>
+
+             <div class="pamflet"></div>
+
+          </div>
+          <footer>
+            <p>Copyright 2020</p>
+          </footer>
+
+          
+
+    
+    
+</body>
+</html>
